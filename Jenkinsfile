@@ -1,7 +1,7 @@
 pipeline {
   agent any
   tools {
-      go 'arab'
+      go 'gotest'
   }
   environment {
       GO111MODULE='on'
@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Run') {
         steps {
-            sh 'cd /var/lib/jenkins/workspace/arab && go-webapp-sample &'
+            sh 'cd /var/lib/jenkins/workspace/full-cicd-go && go-webapp-sample &'
         }
     }
 
