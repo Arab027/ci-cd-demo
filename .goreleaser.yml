@@ -31,3 +31,4 @@ changelog:
       - bump
       - typo
 release:
+prerelease: auto
